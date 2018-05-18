@@ -30,10 +30,6 @@ public class P2movement : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "ground") { _isonground = true; }
-<<<<<<< HEAD
-=======
-
->>>>>>> 10680f812841cae9fa6b7ba9c8239223d1b26b22
     }
 }
 
