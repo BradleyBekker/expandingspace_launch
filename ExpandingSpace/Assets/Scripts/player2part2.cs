@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player2part2 : MonoBehaviour {
+public class Player2part2 : MonoBehaviour {
 
     // Use this for initialization
     public GameObject rocket;
