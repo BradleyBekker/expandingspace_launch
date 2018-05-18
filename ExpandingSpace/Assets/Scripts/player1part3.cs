@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class player1part3 : MonoBehaviour {
+public class Player1part3 : MonoBehaviour {
 
     public GameObject rocket;
     private void OnTriggerEnter2D(Collider2D collision)

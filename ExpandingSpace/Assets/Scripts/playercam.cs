@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playercam : MonoBehaviour {
+public class Playercam : MonoBehaviour {
 
     public GameObject player;
 
