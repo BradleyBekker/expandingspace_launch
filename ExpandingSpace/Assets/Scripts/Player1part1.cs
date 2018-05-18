@@ -9,6 +9,6 @@ public class Player1part1 : MonoBehaviour {
         if (collision.gameObject.tag == "player1") {
             rocket.GetComponent<P1rocket>().part1 = true;
             DestroyObject(gameObject);
-                }
+        }
     }
 }
