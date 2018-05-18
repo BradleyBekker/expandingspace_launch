@@ -1192,6 +1192,16 @@ Prefab:
       propertyPath: m_Name
       value: wall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 61503497053170408, guid: c81dd8d399660dc42b1ac2ec530a2467,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 0.00000023841858
+      objectReference: {fileID: 0}
+    - target: {fileID: 61503497053170408, guid: c81dd8d399660dc42b1ac2ec530a2467,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.95999956
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c81dd8d399660dc42b1ac2ec530a2467, type: 2}
   m_IsPrefabParent: 0
