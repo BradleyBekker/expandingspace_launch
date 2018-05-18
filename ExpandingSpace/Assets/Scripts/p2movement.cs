@@ -29,11 +29,8 @@ public class p2movement : MonoBehaviour {
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-<<<<<<< HEAD:ExpandingSpace/Assets/Scripts/p2movement.cs
         if (collision.gameObject.tag == "ground") { _isonground = true; }
-=======
-        if (collision.gameObject.tag == "ground") { isonground = true; }
->>>>>>> 4204e6b5d704e5de12acbf919b35df0eef923563:Assets/scripts/p2movement.cs
+
     }
 }
 
