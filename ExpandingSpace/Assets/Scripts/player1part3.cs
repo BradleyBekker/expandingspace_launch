@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class Player1part3 : MonoBehaviour {
 
-    public GameObject rocket;
+    public GameObject P1rocket;
+    public GameObject P2rocket;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "player1")
         {
-            rocket.GetComponent<P1rocket>().part3 = true;
+            P1rocket.GetComponent<P1rocket>().part3 = true;
+            DestroyObject(gameObject);
+        }
+        if (collision.gameObject.tag == "player2" && P2rocket.GetComponent<P2rocket>().part3 == false)
+        {
+            P2rocket.GetComponent<P2rocket>().part3 = true;
             DestroyObject(gameObject);
         }
     }
