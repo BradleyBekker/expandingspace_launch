@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class Player1part2 : MonoBehaviour {
 
-    public GameObject rocket;
+    public GameObject P1rocket;
+    public GameObject P2rocket;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "player1")
-        {
-            rocket.GetComponent<P1rocket>().part2 = true;
-            DestroyObject(gameObject);
-        }
+        
+            if (collision.gameObject.tag == "player1" && P1rocket.GetComponent<P1rocket>().part2 == false)
+            {
+                print("p1 got 2");
+                P1rocket.GetComponent<P1rocket>().part2 = true;
+                DestroyObject(gameObject);
+            }
+            if (collision.gameObject.tag == "player2" && P2rocket.GetComponent<P2rocket>().part2 == false)
+            {
+                print("p2 got 2");
+                P2rocket.GetComponent<P2rocket>().part2 = true;
+                DestroyObject(gameObject);
+            }
+        
     }
 }

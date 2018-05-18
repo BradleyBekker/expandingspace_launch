@@ -8,6 +8,6 @@ public class Playercam : MonoBehaviour {
 
     void Update()
     {
-        transform.position = player.transform.position - new Vector3(0, 0, 1000);
+        transform.position = player.transform.position - new Vector3(0, 0, 100);
     }
 }
