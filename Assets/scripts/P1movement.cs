@@ -32,7 +32,6 @@ public class P1movement : MonoBehaviour {
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        print(collision.collider.name);
         if (collision.gameObject.tag == "ground") { isonground = true; }
     }
 }

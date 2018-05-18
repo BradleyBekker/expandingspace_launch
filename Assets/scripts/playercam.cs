@@ -8,6 +8,6 @@ public class playercam : MonoBehaviour {
 
     void LateUpdate()
     {
-        transform.position = player.transform.position - new Vector3(0, 0, 25);
+        transform.position = player.transform.position - new Vector3(0, 0, 40);
     }
 }
