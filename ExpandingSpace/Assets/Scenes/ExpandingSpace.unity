@@ -834,6 +834,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8.5
   jumpHeight: 11
+  playerrocket: {fileID: 608188908}
+  part1: {fileID: 25877330}
+  part2: {fileID: 1966378941}
+  part3: {fileID: 1948020539}
 --- !u!50 &585629617
 Rigidbody2D:
   serializedVersion: 4
