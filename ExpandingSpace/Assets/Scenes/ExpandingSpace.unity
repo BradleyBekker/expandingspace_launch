@@ -834,7 +834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8.5
-  jumpHeight: 11
+  jumpHeight: 9
   playerrocket: {fileID: 608188908}
   part1: {fileID: 25877330}
   part2: {fileID: 1966378941}
@@ -1185,7 +1185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8.5
-  jumpHeight: 11
+  jumpHeight: 9
   playerrocket: {fileID: 1052178798}
   part1: {fileID: 25877330}
   part2: {fileID: 1966378941}
