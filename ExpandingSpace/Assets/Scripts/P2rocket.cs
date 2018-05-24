@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class P2rocket : MonoBehaviour {
     public bool part1 = false;
@@ -12,6 +13,7 @@ public class P2rocket : MonoBehaviour {
         if (part1 && part2 && part3 && collision.gameObject.tag == "player2")
         {
             print("p2 win");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
