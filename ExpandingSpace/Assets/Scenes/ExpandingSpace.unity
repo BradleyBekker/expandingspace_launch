@@ -201,11 +201,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e655cdfb0f661343921380631b433aa, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &25877330 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1796634864451726, guid: ca6a938a5c0a3ee46bd00ab7c57aa067,
-    type: 2}
-  m_PrefabInternal: {fileID: 1204981609}
 --- !u!4 &25877331 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4670532924576494, guid: ca6a938a5c0a3ee46bd00ab7c57aa067,
@@ -834,12 +829,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a746c2f3bef3a834ea8bff2927e0efb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8.5
-  jumpHeight: 9
-  playerrocket: {fileID: 608188908}
-  part1: {fileID: 25877330}
-  part2: {fileID: 1966378941}
-  part3: {fileID: 1948020539}
+  speed: 0.1
+  jumpSpeed: 1
+  _gravityFactor: 0.03
+  _fallDown: 1
+  isJumping: 0
 --- !u!50 &585629617
 Rigidbody2D:
   serializedVersion: 4
@@ -851,10 +845,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1167,7 +1161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ccef83a3c6a4f4698cbb6c24880f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 585629615}
 --- !u!4 &702817182 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4824851873842012, guid: 8e655cdfb0f661343921380631b433aa,
@@ -1204,12 +1197,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d8f6ea3e181f8b46821ec40df623099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8.5
-  jumpHeight: 9
-  playerrocket: {fileID: 1052178798}
-  part1: {fileID: 25877330}
-  part2: {fileID: 1966378941}
-  part3: {fileID: 1948020539}
+  speed: 0.1
+  jumpSpeed: 1
+  _gravityFactor: 0.03
+  _fallDown: 1
+  isJumping: 0
 --- !u!50 &706202045
 Rigidbody2D:
   serializedVersion: 4
@@ -1221,10 +1213,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1412,7 +1404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ccef83a3c6a4f4698cbb6c24880f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 706202043}
 --- !u!124 &722669334
 Behaviour:
   m_ObjectHideFlags: 0
@@ -2691,10 +2682,5 @@ Prefab:
 --- !u!4 &1966378940 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4393596983392882, guid: c57bd86a542700e48b629f70d964449b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1966378939}
---- !u!1 &1966378941 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1717630198716588, guid: c57bd86a542700e48b629f70d964449b,
     type: 2}
   m_PrefabInternal: {fileID: 1966378939}
