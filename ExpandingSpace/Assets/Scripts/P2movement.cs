@@ -14,17 +14,30 @@ public class P2movement : MonoBehaviour
     [SerializeField] private GameObject part1;
     [SerializeField] private GameObject part2;
     [SerializeField] private GameObject part3;
-
+    Animator anim;
     // Update is called once per frame
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+
+    }
+
     void Update()
     {
+        anim.SetFloat("speed", 0);
+
         if (Input.GetKey(KeyCode.RightArrow) && _allowMovement)
         {
+            transform.localScale = new Vector3(1, 1, 1);
+
             transform.Translate(Vector2.right * Time.deltaTime * speed, Space.World);
+            anim.SetFloat("speed", 1);
 
         }
         if (Input.GetKey(KeyCode.LeftArrow) && _allowMovement)
         {
+            transform.localScale = new Vector3(-1, 1, 1);
+            anim.SetFloat("speed", 1);
             transform.Translate(Vector2.left * Time.deltaTime * speed, Space.World);
 
         }

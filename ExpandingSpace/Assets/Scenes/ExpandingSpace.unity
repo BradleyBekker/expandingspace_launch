@@ -815,6 +815,7 @@ GameObject:
   - component: {fileID: 585629618}
   - component: {fileID: 585629617}
   - component: {fileID: 585629616}
+  - component: {fileID: 585629621}
   m_Layer: 0
   m_Name: Player1PlaceHolder
   m_TagString: player1
@@ -942,6 +943,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &585629621
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 585629615}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 43b6e0d1a8c2d4148919e3a9f1b5eff3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &593157355 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1123812948094178, guid: 6d5fe9b4e3a85224697a59f7a38223c0,
@@ -1166,6 +1185,7 @@ GameObject:
   - component: {fileID: 706202046}
   - component: {fileID: 706202045}
   - component: {fileID: 706202044}
+  - component: {fileID: 706202049}
   m_Layer: 0
   m_Name: Player2PlaceHolder
   m_TagString: player2
@@ -1222,18 +1242,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0039241314, y: 0.003900826}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.96, y: 0.96}
+    oldSize: {x: 1.08, y: 1.52}
     newSize: {x: 0.96, y: 0.96}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.96, y: 0.96}
+  m_Size: {x: 1.0777245, y: 1.5015786}
   m_EdgeRadius: 0
 --- !u!212 &706202047
 SpriteRenderer:
@@ -1270,7 +1290,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7ed3cca7f5be91a4396716db8ab3e6e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 293b1f265caf7884ebda2aebd7087e3a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1293,6 +1313,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &706202049
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 706202043}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cf16a1537a6901d4fa0c324eaeb41551, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &709614529
 Prefab:
   m_ObjectHideFlags: 0
